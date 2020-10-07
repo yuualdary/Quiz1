@@ -18,14 +18,14 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div id="app">
-                <li v-for="comment in comments">
+                <li v-for="(comment, index in comments">
                     <button v-on:click="upVote">+</button>
                     <p>{{comment}} With {{vote}} Vote</p>
 
                     <button v-on:click="downVote">-</button>
                 </li>
                 <br>
-                <label for=""> Add Comment</label>>
+                <label for=""> Add Comment</label>
                 <br>
                 <input type="textarea" v-model="content">
                 <button @click="addComment">Comment</button>
